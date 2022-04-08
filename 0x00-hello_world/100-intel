@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wa $CFILE -o ${CFILE//'.c'/'.s'}
+gcc -Xassembler $CFILE -o ${CFILE//'.c'/'.s'}
