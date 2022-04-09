@@ -12,5 +12,6 @@ for (c = 48; c < 58; c++)
 putchar(c);
 for (a = 97; a < 103; a++)
 putchar(a);
+putchar(10);
 return (0);
 }
