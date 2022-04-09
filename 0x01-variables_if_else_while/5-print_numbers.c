@@ -9,6 +9,6 @@ int main(void)
 int c = 0;
 while (c < 10)
 printf("%i", c++);
-print("\n");
+printf("\n");
 return (0);
 }
