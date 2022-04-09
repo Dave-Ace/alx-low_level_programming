@@ -11,7 +11,7 @@ int d = 65;
 for (c = 97; c < 123; c++)
 putchar(c);
 putchar(d);
-d++
+d++;
 putchar(10);
 return (0);
 }
