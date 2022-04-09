@@ -8,7 +8,7 @@ int main(void)
 {
 int c = 0;
 while (c < 10)
-printf("%i", n);
+printf("%i", c);
 c++;
 return (0);
 }
