@@ -8,7 +8,9 @@ int main(void)
 {
 int c;
 for (c = 97; c < 123; c++)
-if (c != 113 || c != 101)
+if (c == 101 || c == 113)
+continue
+else
 putchar(c);
 putchar(10);
 return (0);
