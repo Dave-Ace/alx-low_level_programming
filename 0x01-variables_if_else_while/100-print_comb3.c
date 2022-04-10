@@ -16,12 +16,13 @@ for (s = 49 + c; s < 58; s++)
 if (s == 57)
 {
 ++c;
-putchar(f, s, 44);
-putchar(' ');
+putchar(f);
+putchar(s + ", ");
 }
 else
 {
-putchar(f, s, 44);
+putchar(f);
+putchar(s);
 putchar(' ');
 }
 }
