@@ -17,7 +17,7 @@ if (s == 57)
 {
 ++c;
 putchar(f);
-putchar(s + ", ");
+putchar(s, 44);
 }
 else
 {
