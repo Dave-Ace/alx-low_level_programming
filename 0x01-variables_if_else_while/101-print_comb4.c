@@ -27,9 +27,9 @@ putchar(' ');
 putchar(f);
 putchar(s);
 putchar(t);
+}
+}
 f++;
-}
-}
 }
 putchar(10);
 return (0);
