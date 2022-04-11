@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-int f;
+int f = 48;
 int s;
 int t;
 int c = -1;
 int ct = -1;
-for (f = 48; f < 56; f++)
+while (f < 56)
 {
 ++c;
 for (s = 49 + c; s < 57; s++)
@@ -27,6 +27,7 @@ putchar(' ');
 putchar(f);
 putchar(s);
 putchar(t);
+f++;
 }
 }
 }
