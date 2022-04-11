@@ -8,23 +8,16 @@ int main(void)
 {
 int f;
 int s;
-int c = 0;
+int c = -1;
 for (f = 48; f < 58; f++)
 {
+++c
 for (s = 49 + c; s < 58; s++)
 {
-if (s == 57)
-{
-++c;
 putchar(f);
 putchar(s);
-}
-else
-{
-putchar(f);
-putchar(s);
+putchar(',');
 putchar(' ');
-}
 }
 }
 return (0);
