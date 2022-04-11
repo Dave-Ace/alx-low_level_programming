@@ -23,7 +23,8 @@ else
 {
 putchar(f);
 putchar(s);
-putchar(', ');
+putchar(',');
+putchar(' ');
 }
 }
 }
