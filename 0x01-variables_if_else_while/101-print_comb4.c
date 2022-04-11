@@ -11,7 +11,7 @@ int s;
 int t;
 int c = -1;
 int ct = -1;
-for (f = 48; f < 56; f++)
+for (f = 47; f < 56; ++f)
 {
 ++c;
 for (s = 49 + c; s < 57; s++)
