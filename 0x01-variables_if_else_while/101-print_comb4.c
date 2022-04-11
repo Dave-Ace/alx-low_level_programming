@@ -18,6 +18,7 @@ for (s = 49 + c; s < 57; s++)
 {
 ++ct;
 for (t = 50 + ct; t < 58; t++)
+{
 if ((f != 55) && (t != 50))
 {
 putchar(',');
@@ -26,6 +27,7 @@ putchar(' ');
 putchar(f);
 putchar(s);
 putchar(t);
+}
 }
 }
 putchar(10);
