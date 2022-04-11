@@ -26,7 +26,7 @@ putchar(' ');
 }
 putchar(f);
 putchar(s);
-putchar(ct);
+putchar(t);
 }
 }
 }
