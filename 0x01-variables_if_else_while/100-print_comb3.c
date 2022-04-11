@@ -19,13 +19,10 @@ if (( f != 57) && (s != 49))
 putchar(',');
 putchar(' ');
 }
-else
-{
-putchar(' ');
-}
 putchar(f);
 putchar(s);
 }
 }
+putchar(10);
 return (0);
 }
