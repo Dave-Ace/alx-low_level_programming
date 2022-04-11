@@ -14,7 +14,7 @@ for (f = 48; f < 58; f++)
 ++c;
 for (s = 49 + c; s < 58; s++)
 {
-if (f = 57)
+if (f == 57)
 {
 putchar(f);
 putchar(s);
@@ -23,7 +23,7 @@ else
 {
 putchar(f);
 putchar(s);
-putchar(", ");
+putchar(', ');
 }
 }
 }
