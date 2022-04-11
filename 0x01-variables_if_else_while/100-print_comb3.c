@@ -19,7 +19,7 @@ if ((f != 57) && (f != 48))
 putchar(',');
 putchar(' ');
 }
-else if (f = 57)
+else if (f == 57)
 putchar(' ');
 else
 {
