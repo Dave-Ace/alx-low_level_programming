@@ -7,11 +7,15 @@
 void print_alphabet_x10(void)
 {
 int i = 1;
+int c;
 while (i < 11)
 {
-print_alphabet();
-i++;
+for (c = 97; c < 123; c++)
+{
+putchar(c);
 }
 putchar(10);
+i++;
+}
 return (0);
 }
