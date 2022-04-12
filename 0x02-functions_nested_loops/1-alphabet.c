@@ -11,5 +11,5 @@ for (i = 97; i < 113; i++)
 putchar(i);
 putchar(10);
 }
-return (0);
+return;
 }
