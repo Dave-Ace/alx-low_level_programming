@@ -3,12 +3,9 @@
 /**
  * _islower - lower case
  * @c: argument
- * Return: Always 0(Success)
+ * Return: 1 or 0
  */
 int _islower(int c)
 {
-if (c > 97 && c < 123)
-return (1);
-else
-return (0);
+return (c > 97 && c < 123);
 }
