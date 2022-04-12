@@ -17,5 +17,5 @@ putchar(c);
 putchar(10);
 i++;
 }
-return (0);
+return;
 }
