@@ -26,7 +26,7 @@ if (tt != 9)
 {
 _putchar(',');
 _putchar(' ');
-_PUTCHAR(' ');
+_putchar(' ');
 }
 else
 {
