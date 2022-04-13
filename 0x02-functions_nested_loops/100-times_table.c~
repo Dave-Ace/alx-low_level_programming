@@ -1,0 +1,33 @@
+#include "main.h"
+/**
+ * print_times_table - TImes table 1 to n
+ * @n: Parameter
+ * Return: Void
+ */
+void print_times_table(int n)
+{
+int t = 0;
+int tt;
+int f;
+int s;
+int t;
+int fs;
+if ((n < 15) || (n > 0))
+  {
+    while (t < n)
+      {
+	tt = 0;
+	while (tt < n)
+	  {
+	    int times = t * tt;
+	    if (times == 0)
+	      {
+		_putchar('0' + times);
+	      }
+	  }
+      }
+  }
+
+
+
+}
