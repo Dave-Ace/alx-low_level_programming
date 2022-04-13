@@ -20,16 +20,16 @@ h1 = 0;
 while (h1 <= a)
 {
 m2 = 0;
-while (32 < 6)
+while (m2 < 6)
 {
 m1 = 0;
 while (m1 < 10)
 {
-_putchar(h2 + '0');
-_putchar(h1 + '0');
+_putchar('0' + h2);
+_putchar('0' + h1);
 _putchar(':');
-_putchar(m2 + '0');
-_putchar(m1 + '0');
+_putchar('0' + m2);
+_putchar('0' + m1);
 _putchar('\n');
 m1++;
 }
