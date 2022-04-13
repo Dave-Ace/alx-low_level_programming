@@ -26,7 +26,7 @@ if (tt != 9)
 {
 _putchar(',');
 _putchar(' ');
-nxt = tt++;
+int nxt = tt++;
 if ((times < 9) && (nxt * t < 9))
 _putchar(' ');
 }
