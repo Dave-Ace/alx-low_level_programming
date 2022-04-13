@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-void print_alphabet(void);
-return (0);
+jack_bauer(void);
+ return (0);
 }
