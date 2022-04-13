@@ -7,7 +7,7 @@ void jack_bauer(void)
 {
 int m1;
 int m2;
-int h;
+int h = 0;
 while (h < 25)
 {
 _putchar(h + '0');
