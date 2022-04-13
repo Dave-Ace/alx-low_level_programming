@@ -5,29 +5,32 @@
  */
 void jack_bauer(void)
 {
-int m = 0;
+int m1 = 0;
+int m2 = 0;
 int h = 0;
 while (h < 24)
 {
-while (m < 60)
-{
-if ((h < 10) || (m < 10))
+if (h < 10)
 {
 _putchar('0');
 _putchar(h + '0');
 _putchar(':');
-_putchar('0');
-_putchar(m + '0');
-_putchar('\n');
 }
 else
 {
 _putchar(h + '0');
 _putchar(':');
-_putchar(m + '0');
-_putchar('\n');
 }
-m++;
+while (m2 < 5)
+{
+_putchar(m2 + '0');
+while (m1 < 10)
+{
+_putchar(m1 + '0');
+_putchar('\n');
+m1++;
+}
+m2++;
 }
 h++;
 }
