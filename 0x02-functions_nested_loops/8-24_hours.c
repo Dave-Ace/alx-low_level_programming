@@ -14,17 +14,17 @@ while (m < 60)
 if ((h < 10) || (m < 10))
 {
 _putchar('0');
-_putchar(h);
+_putchar(h + '0');
 _putchar(':');
 _putchar('0');
-_putchar(m);
+_putchar(m + '0');
 _putchar('\n');
 }
 else
 {
-_putchar(h);
+_putchar(h + '0');
 _putchar(':');
-_putchar(m);
+_putchar(m + '0');
 _putchar('\n');
 }
 m++;
