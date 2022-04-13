@@ -10,7 +10,15 @@ if (n < 98)
 {
 while (n <= 98)
 {
-printf("%i, ", n);
+printf("%i", n);
+if (n == 98)
+{
+printf("\n");
+}
+else
+{
+printf(", ");
+}
 n++;
 }
 }
@@ -18,7 +26,15 @@ else
 {
 while (n >= 98)
 {
-printf("%i, ", n);
+printf("%i", n);
+if (n == 98)
+{
+printf("\n");
+}
+else
+{
+printf(", ");
+}
 n--;
 }
 }
