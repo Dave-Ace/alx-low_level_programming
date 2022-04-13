@@ -13,11 +13,20 @@ tt = 0;
 while (tt < 10)
 {
 int times = t * tt;
+if (times > 10)
+{
+_putchar('0' + times / 10);
+_putchar('0' + times % 10);
+}
+else
+{
 _putchar('0' + times);
+}
 if (tt != 9)
 {
 _putchar(',');
 _putchar(' ');
+_PUTCHAR(' ');
 }
 else
 {
