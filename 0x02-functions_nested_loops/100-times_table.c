@@ -11,7 +11,7 @@ if ((n < 15) || (n > 0))
 {
 while (t <= n)
 {
-for (tt = 0; tt < n; tt++)
+for (tt = 0; tt <= n; tt++)
 {
 int times = tt * t;
 if (tt == 0)
