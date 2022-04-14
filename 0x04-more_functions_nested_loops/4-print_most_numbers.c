@@ -5,10 +5,10 @@
  */
 void print_most_numbers(void)
 {
-int a= 0;
+int a = 0;
 while (a < 10)
 {
-if (a ==2 || a == 4)
+if (a == 2 || a == 4)
 a++;
 _putchar('0' + a);
 a++;
