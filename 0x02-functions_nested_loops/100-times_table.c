@@ -36,9 +36,9 @@ _putchar('0' + times % 10);
 }
 else
 {
-_putchar('0' + ((times / 10) / 10);
-_putchar('0' + ((times / 10) % 10);
-_putchar('0' + (times % 10);
+_putchar('0' + ((times / 10) / 10));
+_putchar('0' + ((times / 10) % 10));
+_putchar('0' + (times % 10));
 }
 if (tt == n)
 _putchar('\n');
