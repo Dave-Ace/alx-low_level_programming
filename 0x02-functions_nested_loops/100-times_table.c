@@ -7,7 +7,7 @@
 void print_times_table(int n)
 {
 int t = 0, tt;
-if ((n < 15) && (n > 0))
+if ((n < 15) && (n >= 0))
 {
 while (t <= n)
 {
@@ -40,9 +40,9 @@ _putchar('0' + ((times / 10) / 10));
 _putchar('0' + ((times / 10) % 10));
 _putchar('0' + (times % 10));
 }
-if (tt == n)
-_putchar('\n');
 }
+if (tt == n)
+_putchar('\n');   
 }
 t++;
 }
