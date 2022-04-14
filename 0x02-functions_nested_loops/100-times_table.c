@@ -18,17 +18,17 @@ if (tt == 0)
 {
 _putchar('0' + times);
 }
-if (tt != 0))
+if (tt != 0)
 {
 _putchar(',');
 _putchar(' ');
-if (times < 10);
+if (times < 10)
 {
 _putchar(' ');
 _putchar(' ');
 _putchar('0' + times);
 }
-else if (times < 100);
+else if (times < 100)
 {
 _putchar(' ');
 _putchar('0' + times / 10);
