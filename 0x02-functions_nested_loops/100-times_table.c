@@ -6,12 +6,7 @@
  */
 void print_times_table(int n)
 {
-int t = 0;
-int tt;
-int f;
-int s;
-int t;
-int fs;
+int t = 0, tt;
 if ((n < 15) || (n > 0))
 {
 while (t < n)
@@ -21,40 +16,31 @@ while (tt < n)
 {
 int times = t * tt;
 if (times == 0)
+_putchar('0' + times);
+else if (times > 0)
 {
+_putchar(',');
+_putchar(' ');
+if (times < 10)
+{
+_putchar(' ');
+_putchar(' ');
 _putchar('0' + times);
 }
-else if (times > 99)
+else if (times < 100)
 {
-fs = times / 10;
-f = fs / 10;
-s = s % 10;
-t = times % 10;
-_putchar(',');
-_putchar(' ');
-_putchar('0' + f);
-_puthar('0' + s);
-_putchar('0' + t);
-if (tt == n)
-{
-_putchar('\n');
-}
-}
-else if (times > 9)
-{
-_putchar(',');
-_putchar(' ');
 _putchar(' ');
 _putchar('0' + times / 10);
 _putchar('0' + times % 10);
 }
 else
 {
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(' ');
-_putchar('0' + times);
+_putchar('0' + (times / 10) / 10);
+_putchar('0' + (times / 10) % 10);
+_putchar('0' + times % 10);
+if (tt == n)
+_putchar('\n');
+}
 }
 tt++;
 }
