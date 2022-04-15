@@ -4,12 +4,14 @@
  * @size: parameter
  * Return: void
  */
-void print_square(int size);
+void print_square(int size)
 {
 int l = 0;
 int b = 0;
 if (size <= 0)
+{
 _putchar('\n');
+}
 else
 {
 while (l < size)
