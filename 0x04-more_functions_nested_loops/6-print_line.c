@@ -2,7 +2,7 @@
 /**
  * print_line - print line
  * @n: parameter
- * Return : void
+ * Return: void
  */
 void print_line(int n)
 {
@@ -15,7 +15,7 @@ else
 {
 while (no <= n)
 {
-_putchar(95);
+_putchar('_');
 no++;
 }
 _putchar('\n');

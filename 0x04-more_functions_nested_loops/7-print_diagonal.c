@@ -15,7 +15,7 @@ else
 {
 while (no <= n)
 {
-_putchar(47);
+_putchar('0' + 47);
 no++;
 }
 _putchar('\n');
