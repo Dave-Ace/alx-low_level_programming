@@ -14,7 +14,7 @@ if (n == 1)
 f = 1;
 printf("%i, ", f);
 }
-if (n == 2);
+if (n == 2)
 {
 s = 1;
 printf("%i, ", s);
