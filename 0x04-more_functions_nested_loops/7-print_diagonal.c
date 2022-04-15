@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_line - print line
+ * print_diagonal - print line
  * @n: parameter
  * Return : void
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 int no = 0;
 if (n <= 0)
@@ -15,7 +15,7 @@ else
 {
 while (no <= n)
 {
-_putchar(95);
+_putchar(47);
 no++;
 }
 _putchar('\n');
