@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_square = to print square
+ * print_square - to print square
  * @size: parameter
  * Return: void
  */
@@ -24,5 +24,6 @@ b++;
 _putchar('\n');
 l++;
 }
+_putchar('\n');
 }
 }
