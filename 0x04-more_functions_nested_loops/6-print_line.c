@@ -16,7 +16,7 @@ else
 while (no <= n)
 {
 _putchar(95);
-no++
+no++;
 }
 _putchar('\n');
 }
