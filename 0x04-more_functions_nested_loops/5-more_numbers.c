@@ -11,6 +11,7 @@ while (a < 11)
 {
 for (n = 0; n < 15; n++)
 _putchar('0' + n);
+_putchar('\n');
 }
 _putchar('\n');
 }
