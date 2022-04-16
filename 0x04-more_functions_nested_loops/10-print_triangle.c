@@ -12,6 +12,7 @@ int ash = 1;
 if (size <= 0)
 {
 _putchar('\n');
+}
 else
 {
 for (start = 1; start < size; start++)
