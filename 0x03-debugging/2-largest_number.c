@@ -17,9 +17,13 @@ else if (b > a &&  b > c)
 {
 largest = b;
 }
-else
+else is (c > b)
 {
 largest = c;
+}
+else
+{
+largest = b;
 }
 return (largest);
 }
