@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_triangle - PRint triangk;lel of given size
- * @size - parameter
+ * print_triangle - PRint triangle of given size
+ * @size: parameter
  * Return : Void
  */
 void print_triangle(int size)
