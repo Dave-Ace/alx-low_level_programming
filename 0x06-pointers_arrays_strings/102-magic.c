@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - entry
+ * Return: integer
+ */
 int main(void)
 {
 int n;
