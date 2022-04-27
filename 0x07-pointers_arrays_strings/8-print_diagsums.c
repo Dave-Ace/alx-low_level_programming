@@ -26,5 +26,8 @@ sums = sums + a[i][j];
 break;
 }
 }
-printf("%i, %i", sumf, sums);
+_putchar('0', sumf);
+_putchar(',');
+_putchar(' ');
+_putchar('0', sums);
 }
