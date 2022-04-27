@@ -1,1 +1,1 @@
-POINTEr arrays and strings with C
+Pointers and arrays. Memory Address
