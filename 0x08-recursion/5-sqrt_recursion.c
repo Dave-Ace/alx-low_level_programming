@@ -9,7 +9,7 @@ int square_root(int n, int c)
 {
 if (c == 1)
 return (-1);
-if (square_root(n, c - 1) * square_root(n, c - 1) == n)
+if ((c - 1) * (c - 1) == n)
 {
 return (c);
 }
