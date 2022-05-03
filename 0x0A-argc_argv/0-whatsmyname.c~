@@ -1,0 +1,11 @@
+#include <stdio.h>
+/**
+ * main - entry point
+ * @argc: argument
+ * @argv: argument array
+ * Return: 0
+ */
+int main (int argc, char *argv[])
+{
+
+}
