@@ -9,9 +9,9 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-unsgined int long i = 0;
+unsigned int long i = 0;
 char *ar;
-ar = malloc(sizeof(*s1) * (strlen(s1) + strlen(s2));
+ ar = malloc(sizeof(*s1) * (strlen(s1) + strlen(s2)));
 if (ar == NULL)
 return (NULL);
 while (i < strlen(s1))

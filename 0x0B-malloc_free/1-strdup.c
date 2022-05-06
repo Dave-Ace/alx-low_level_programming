@@ -19,5 +19,6 @@ for (i = 0; i <= strlen(str); i++)
 {
 ar[i] = str[i];
 }
+ar[strlen(str)] = '\0';
 return (ar);
 }
