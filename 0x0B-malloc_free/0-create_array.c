@@ -16,7 +16,7 @@ return (NULL);
 }
 else
 {
-ar = malloc(98);
+ar = malloc(size);
 if (ar == NULL)
 return (NULL);
 for (i = 0; i < size; i++)
