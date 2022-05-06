@@ -23,7 +23,7 @@ for (h = 0; h < height; h++)
 ar[h] = malloc(width * sizeof(int));
 if (ar[h] == NULL)
 {
-for (i--; i >= 0; i--)
+for (h--; h >= 0; h--)
 free(ar[h]);
 free(ar);
 return (NULL);
