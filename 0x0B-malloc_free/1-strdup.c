@@ -10,6 +10,8 @@ char *_strdup(char *str)
 {
 long unsigned int i;
 char *ar;
+if (str == NULL)
+return (NULL);
 ar = malloc(sizeof(*str) * strlen(str));
 if (ar == NULL)
 return (NULL);
