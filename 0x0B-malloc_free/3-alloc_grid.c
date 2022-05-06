@@ -12,7 +12,7 @@ int h, w;
 int **ar;
 if (width <= 0 || height <= 0)
 return (NULL);
-ar = malloc(sizeof(int*) * height);
+ar = malloc(sizeof(int *) * height);
 if (ar == 0)
 {
 free(ar);
