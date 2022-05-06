@@ -12,20 +12,25 @@ int h, w;
 int **ar;
 if (width <= 0 || height <= 0)
 return (NULL);
-ar = malloc((sizeof(width) * width) + (sizeof(height) * height));
+ar = malloc(sizeof(int*) * height);
 if (ar == 0)
 {
+free(ar);
 return (NULL);
 }
-else
+for (h = 0; h < height; h++)
 {
-for (h = 0; h <= height; h++)
+ar[h] = malloc(width * sizeof(int));
+if (ar[h] == NULL)
 {
-for (w = 0; w <= width; w++)
-{
+for (i--; i >= 0; i--)
+free(ar[h]);
+free(ar);
+return (NULL);
+}
+}
+for (h = 0; h < height; h++)
+for (w = 0; w < width; w++)
 ar[h][w] = 0;
-}
-}
-}
 return (ar);
 }
