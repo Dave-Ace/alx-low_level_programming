@@ -12,7 +12,7 @@ int i;
 int mul = 1;
 if (argc < 3 || argc > 3)
 {
-printf("ERROR\n");
+printf("Error\n");
 return (1);
 }
 else
