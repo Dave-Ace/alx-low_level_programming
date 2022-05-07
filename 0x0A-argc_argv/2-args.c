@@ -6,8 +6,10 @@
  * @argv: argument array
  * Return: 0
  */
-int main(int argc __attribute__((unused)), char **argv)
+int main(int argc, char **argv)
 {
-printf("%s\n", argv[0]);
+int i;
+for (i = 0; i < argc; i++)
+printf("%s\n", argv[i]);
 return (0);
 }
