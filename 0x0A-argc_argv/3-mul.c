@@ -12,13 +12,13 @@ int i;
 int mul = 1;
 if (argc < 3 && argc > 3)
 {
-printf("ERROR");
+printf("ERROR\n");
 return (1);
 }
 else
 {
-for (i = 0; i < argc; i++)
-mul *= argv[i];
+for (i = 1; i < argc; i++)
+mul *= atoi(argv[i]);
 printf("%d\n", mul);
 return (0);
 }
