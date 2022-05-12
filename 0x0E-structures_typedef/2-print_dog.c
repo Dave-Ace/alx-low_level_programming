@@ -10,7 +10,7 @@ if ((*d))
 if (d->name)
 printf("Name: %s\n", (*d).name);
 else
-print("Name: (nil)")
+print("Name: (nil)");
 if (d->age)
 printf("Age: %d\n", (*d).age);
 else
