@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "dog.h"
 /**
  * new_dog - creates a new dog
@@ -9,7 +8,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t newdog;
+dog_t *newdog;
 newdog->name = name;
 newdog->age = age;
 newdog->owner = owner;
