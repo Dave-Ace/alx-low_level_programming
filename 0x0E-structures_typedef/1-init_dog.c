@@ -2,6 +2,7 @@
 #include "dog.h"
 /**
  * init_dog - initializes a variable type dog
+ * @name: name of dog
  * @d: structure dog
  * @age: dog age
  * @owner: Owner
