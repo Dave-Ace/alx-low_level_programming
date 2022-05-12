@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include "dog.h"
 /**
  * print_dog - prints a struct dog
  * @d: struct dog
  */
 voit print_dog(struct dog *d)
 {
-if ((*d))
+if (d)
 {
 if (d->name)
 printf("Name: %s\n", (*d).name);
