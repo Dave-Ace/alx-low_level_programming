@@ -15,13 +15,13 @@ int ite = 0;
 va_start(no, n);
 if (separator != NULL)
 {
-for (i = n; ite <= count;  i = va_arg(no, const  char *))
+for (i = n; ite <= count;  s = va_arg(no, char *))
 {
 if (ite != 0)
 {
-if (i != NULL)
+if (s != NULL)
 {
-printf("%s", i);
+printf("%s", s);
 }
 else
 {
