@@ -13,7 +13,8 @@ int count = n;
 int ite = 0;
 va_start(no, n);
 if (n == 0)
-return (0);
+{
+}
 if (separator != NULL)
 {
 for (i = n; ite <= count;  i = va_arg(no, int))
