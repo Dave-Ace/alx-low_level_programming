@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdarg.h>
+/**
+ * print_strings - functions that prints string
+ * @separator: string separator
+ * @n: number of arguments
+ */
+void print_numbers(const char *separator, const unsigned int n, ...)
+{
+va_list no;
+int i;
+char *s;
+int count = n;
+int ite = 0;
+va_start(no, n);
+if (separator != NULL)
+{
+for (i = n; ite <= count;  i = va_arg(no, const  char *))
+{
+if (ite != 0)
+{
+if (i != NULL)
+{
+printf("%s", i);
+}
+else
+{
+printf("nil");
+}
+if (ite != count)
+{
+printf("%c ", *separator);
+}
+}
+ite++;
+}
+printf("\n");
+}
+va_end(no);
+}
