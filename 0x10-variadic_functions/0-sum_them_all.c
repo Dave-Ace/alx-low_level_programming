@@ -24,8 +24,6 @@ for (i = n; ite <= count;  i = va_arg(ap, int))
 if (ite != 0)
 {
 sum += i;
-printf("%d\n", i);
-printf("Sum: %d\n", sum);
 }
 ite++;
 }
