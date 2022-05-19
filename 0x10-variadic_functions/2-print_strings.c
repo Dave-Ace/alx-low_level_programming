@@ -8,7 +8,6 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list no;
-int i;
 char *s;
 int count = n;
 int ite = 0;
