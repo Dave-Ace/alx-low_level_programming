@@ -8,12 +8,12 @@
  */
 size_t print_list(const list_t *h)
 {
-const list_t *h = h;
+const list_t *node = h;
 int no = 0;
-while (h != NULL)
+while (node != NULL)
 {
-if (h->str != NULL)
-printf("[%u] %s\n", h->len, h->str);
+if (node->str != NULL)
+printf("[%u] %s\n", node->len, node->str);
 else
 printf("[0] (nil)\n");
 no++;
