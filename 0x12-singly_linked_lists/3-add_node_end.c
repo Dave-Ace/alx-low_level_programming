@@ -15,20 +15,21 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	newNode = malloc(sizeof(list_t));
 	if (newNode == NULL)
-	{
-		return (NULL);
-	}
+		return (NULL);}
 	for (count = 0; str[count]; count++)
 		;
 	preNode = *head;
+	newNode-> = count;
+	newNode->str - strdup(str);
+	newNode->next = NULL;
+	if (preNode == NULL)
+		*head = newNode;
+		return (*head);
 	if (preNode != NULL)
 	{
 		while (preNode->next != NULL)
 			preNode = preNode->next;
+		preNode->next = newNode;
+		return (newNode);
 	}
-	preNode->next = newNode;
-	newNode->len = count;
-	newNode->str = strdup(str);
-	newNode->next = NULL;
-	return (newNode);
 }
