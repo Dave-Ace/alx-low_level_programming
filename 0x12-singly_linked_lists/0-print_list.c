@@ -13,11 +13,11 @@ int no = 0;
 while (node != NULL)
 {
 if (node->str != NULL)
-printf("[%u] %s\n", node->len, node->str);
+printf("[%d] %s\n", node->len, node->str);
 else
-printf("[0] (nil)\n");
+printf("[%d] %s\n", 0, "(nil)");
 no++;
-h = h->next;
+node = node->next;
 }
 return (no);
 }
