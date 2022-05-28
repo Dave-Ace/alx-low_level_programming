@@ -24,7 +24,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (preNode != NULL)
 	{
 		while (preNode->next != NULL)
-			PreNode = preNode->next;
+			preNode = preNode->next;
 	}
 	preNode->next = newNode;
 	newNode->len = count;
