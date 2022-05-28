@@ -10,7 +10,7 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	struct list_t *newNode = malloc(sizeof(struct list_t));
+	struct list_t *newNode = malloc(sizeof(list_t));
 	size_t count;
 
 	if (newNode == NULL)
