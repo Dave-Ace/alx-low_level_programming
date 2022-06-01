@@ -11,6 +11,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int sum = 0; 
 	int i, bin, digit, mod;
 	int len = strlen(b);
+	int p;
 	for (i = 0; i < len - 1; i++)
 	{
 		if (isalpha(b[i]))
@@ -21,7 +22,9 @@ unsigned int binary_to_uint(const char *b)
 	{
 		mod = digit % 10;
 		digit = digit / 10;
-		bin = 2**i;
+		bin = 2;
+		for (p = 1; p <= i; p++)
+			bin *= 2;
 		if (mod != 1 && mod != 0)
 			return (0);
 		sum = sum + (mod * bin);
