@@ -1,6 +1,5 @@
 #include <ctype.h>
 #include <stdlib.h>
-#include <math.h>
 #include <string.h>
 /**
  * binary_to_uint - unction that converts a binary number to an unsigned int
@@ -22,7 +21,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		mod = digit % 10;
 		digit = digit / 10;
-		bin = pow(2, i);
+		bin = 2**i;
 		if (mod != 1 && mod != 0)
 			return (0);
 		sum = sum + (mod * bin);
