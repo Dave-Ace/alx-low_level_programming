@@ -2,7 +2,7 @@
 #include "lists.h"
 /**
  * free_list - function that free list
- * @head: point4er to list 
+ * @head: point4er to list
  */
 void free_list(list_t *head)
 {
