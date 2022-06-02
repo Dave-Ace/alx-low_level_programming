@@ -8,15 +8,19 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int sum = 0; 
+	unsigned int sum = 0;
 	int i, bin, digit, mod;
 	int len = strlen(b);
 	int p;
+
 	for (i = 0; i < len - 1; i++)
 	{
 		if (isalpha(b[i]))
 			return (0);
 	}
+
+	if (b == NULL)
+		return (0);
 	digit = atoi(b);
 	for (i = 0; len > 0; len--)
 	{
@@ -24,11 +28,16 @@ unsigned int binary_to_uint(const char *b)
 		digit = digit / 10;
 		bin = 2;
 		for (p = 1; p <= i; p++)
-			bin *= 2;
+			if (i == 1)
+				bin = 2;
+			else if (i == 0)
+				bin = 1;
+			else
+				bin *= 2;
 		if (mod != 1 && mod != 0)
 			return (0);
 		sum = sum + (mod * bin);
 		i++;
 	}
-	return sum;
+	return (sum);
 }
