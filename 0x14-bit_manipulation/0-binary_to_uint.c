@@ -22,22 +22,26 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 		return (0);
 	digit = atoi(b);
-	for (i = 0; len > 0; len--)
+	for (i = 0; len > 0; len--, i++)
 	{
 		mod = digit % 10;
 		digit = digit / 10;
-		bin = 2;
+		if (i == 0)
+		{
+			bin = 1;
+		}
+		else if (i == 1)
+		{
+			bin = 2;
+		}
+		else
+		{
 		for (p = 1; p <= i; p++)
-			if (i == 1)
-				bin = 2;
-			else if (i == 0)
-				bin = 1;
-			else
-				bin *= 2;
+			bin *= 2;
+		}
 		if (mod != 1 && mod != 0)
 			return (0);
 		sum = sum + (mod * bin);
-		i++;
 	}
 	return (sum);
 }
