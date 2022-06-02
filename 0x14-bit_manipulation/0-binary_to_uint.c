@@ -13,14 +13,13 @@ unsigned int binary_to_uint(const char *b)
 	int len = strlen(b);
 	int p;
 
+	if (b == NULL || len == 0)
+		return (0);
 	for (i = 0; i < len - 1; i++)
 	{
 		if (isalpha(b[i]))
 			return (0);
 	}
-
-	if (b == NULL)
-		return (0);
 	digit = atoi(b);
 	for (i = 0; len > 0; len--, i++)
 	{
@@ -36,8 +35,9 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else
 		{
-		for (p = 1; p <= i; p++)
-			bin *= 2;
+			bin = 2;
+			for (p = 1; p <= i; p++)
+				bin *= 2;
 		}
 		if (mod != 1 && mod != 0)
 			return (0);
