@@ -7,7 +7,8 @@
  * @n: number of bytes of s2 to concatenate
  * Return: pointer that pointes to space
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n){
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
 	char *newstr;
 	unsigned int i = 0, j = 0, m, p;
 
@@ -40,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n){
 	else
 	{
 		i = 0;
-		while (i <= n)
+		while (i < n)
 		{
 			newstr[j] = s2[i];
 			i++;
