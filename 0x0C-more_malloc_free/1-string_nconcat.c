@@ -50,3 +50,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n){
 	newstr[j] = '\0';
 	return (newstr);
 }
+/**
+ * strlength - finds the length of a given string
+ * @string: given string
+ * Return: returns the length
+ */
+int strlength(char *string)
+{
+	int i = 0;
+
+	while (*(string + i) != '\0')
+		i++;
+	return (i);
+}
