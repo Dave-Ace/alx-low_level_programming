@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int fd1, fd2, chars_read, chars_written, file_closed, file2_closed;
 	char *buf[1024];
-	
+
 	if (argc != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	fd1 = open(argv[1], O_RDONLY, 0);
